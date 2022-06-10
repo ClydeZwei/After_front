@@ -22,7 +22,7 @@
     "precommit": "lint-staged",
     "prettier": "prettier -c --write \"src/**/*\"",
     "serve": "umi-serve",
-    "start": "set PORT=8000 && umi dev",
+    "start": "set PORT=3214 && umi dev",
     "start:dev": "cross-env REACT_APP_ENV=dev MOCK=none UMI_ENV=dev umi dev",
     "start:no-mock": "cross-env MOCK=none UMI_ENV=dev umi dev",
     "start:no-ui": "cross-env UMI_UI=none UMI_ENV=dev umi dev",
@@ -71,7 +71,8 @@
     "react-dom": "^17.0.0",
     "react-helmet-async": "^1.0.4",
     "umi": "^3.5.0",
-    "umi-serve": "^1.9.10"
+    "umi-serve": "^1.9.10",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@ant-design/pro-cli": "^2.0.2",

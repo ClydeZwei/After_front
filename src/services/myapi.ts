@@ -99,7 +99,52 @@ export async function edit_after_fb_sku(
     requestType: 'form',
   });
 }
+// CB的编辑
+export async function edit_after_cb(editId: any) {
+  console.log(editId);
+  return request('/api/after/changecb', {
+    method: 'PUT',
+    data: { editId },
+    requestType: 'form',
+  });
+}
 
+export async function edit_after_cb_sku(
+  editId: any,
+  editOrder: any,
+  editSKU: any,
+  editSaler: any,
+  editStore: any,
+) {
+  return request('/api/after/changecb', {
+    method: 'PUT',
+    data: { editId, editOrder, editSKU, editSaler, editStore },
+    requestType: 'form',
+  });
+}
+// Return的编辑
+export async function edit_after_return(editId: any) {
+  console.log(editId);
+  return request('/api/after/changereturn', {
+    method: 'PUT',
+    data: { editId },
+    requestType: 'form',
+  });
+}
+
+export async function edit_after_return_sku(
+  editId: any,
+  editOrder: any,
+  editSKU: any,
+  editSaler: any,
+  editStore: any,
+) {
+  return request('/api/after/changereturn', {
+    method: 'PUT',
+    data: { editId, editOrder, editSKU, editSaler, editStore },
+    requestType: 'form',
+  });
+}
 export async function edit_after2021(editId: any) {
   console.log(editId);
   return request('/api/after/change2021', {

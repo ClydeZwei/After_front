@@ -43,35 +43,33 @@
         icon: 'smile',
         component: './After/sort/az',
       },
-    ],
-  },
-  {
-    path: '/after2021',
-    icon: 'smile',
-    name: '售后2021补登',
-    access: 'AllManager',
-    routes: [
       {
-        path: '/after2021/add',
-        name: '售后登记2021',
+        path: '/after/sort/fb',
+        name: '绩效管理表-FB',
         icon: 'smile',
-        component: './After2021',
+        component: './After/sort/fb',
       },
-      // {
-      //   path: '/after/sort',
-      //   name: '分页',
-      //   icon: 'smile',
-      //   routes: [
-      //     {
-      //       path: '/after/sort/az',
-      //       name: 'AZ',
-      //       icon: 'smile',
-      //       component: './After/sort/az',
-      //     },
-      //   ],
-      // },
+      {
+        path: '/after/sort/cb',
+        name: '绩效管理表-CB',
+        icon: 'smile',
+        component: './After/sort/cb',
+      },
+      {
+        path: '/after/sort/return',
+        name: '绩效管理表-退货',
+        icon: 'smile',
+        component: './After/sort/return',
+      },
+      {
+        path: '/after/sort/complain',
+        name: '绩效管理表-投诉',
+        icon: 'smile',
+        component: './After/sort/complain',
+      },
     ],
   },
+
   {
     path: '/match',
     name: '匹配表',
@@ -112,40 +110,7 @@
       },
     ],
   },
-  {
-    path: '/zhouzhua',
-    name: '周转表',
-    icon: 'TableOutlined',
-    routes: [
-      {
-        path: '/zhouzhua/tableall',
-        name: '周转表-总表',
-        icon: 'TableOutlined',
-        component: './zhouzhuan/index',
-      },
-      {
-        path: '/zhouzhua/tablehaiwai',
-        name: '周转表-海外FBA',
-        icon: 'TableOutlined',
-        component: './zhouzhuan/table_haiwai',
-      },
-      {
-        path: '/zhouzhua/tablewm',
-        name: '周转表-WM',
-        icon: 'TableOutlined',
-        component: './zhouzhuan/table_wm',
-      },
-      {
-        path: '/zhouzhua/tablewf',
-        name: '周转表-WF',
-        icon: 'TableOutlined',
-        component: './zhouzhuan/table_wf',
-      },
-      {
-        component: './404',
-      },
-    ],
-  },
+
   {
     path: '/inventory',
     name: '库存分布表',

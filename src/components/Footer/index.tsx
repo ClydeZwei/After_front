@@ -6,7 +6,7 @@ export default () => {
   const intl = useIntl();
   const defaultMessage = intl.formatMessage({
     id: 'app.copyright.produced',
-    defaultMessage: 'Ant Design',
+    defaultMessage: 'based on ant design',
   });
 
   const currentYear = new Date().getFullYear();
